@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Practice</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- header section -->
+    <header id="header">
+        <div class="logo">
+            Logo
+        </div>
+
+        <div class="mobi-menu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Content</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header section -->
+
+    <!-- banner section -->
+    <section>
+        <div class="banner-dv">
+            <div class="banner-text">
+                <h2>Welcome to my Page</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis impedit quo perferendis
+                </p>
+                <button type="button">Sign Up</button>
+            </div>
+        </div>
+    </section>
+    <!-- banner section -->
+
+    <!-- main section -->
+    <section>
+        <div class="main-sec">
+            <div class="about-dv">
+                
+                <div class="about-description">
+                    <div class="about-img-dv">
+                        <img src="images/web3.jpg" alt="">
+                    </div>
+                    <div class="about-desc-dv">
+                        <h2>About Us</h2>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptas itaque? Labore nostrum quam earum harum? Qui totam odit doloremque ratione aperiam voluptates sequi, officiis consectetur, soluta praesentium, dolorum sint.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptas itaque? Labore nostrum quam earum harum? Qui totam odit doloremque ratione aperiam voluptates sequi, officiis consectetur, soluta praesentium, dolorum sint.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptas itaque? Labore nostrum quam earum harum? Qui totam odit doloremque ratione aperiam voluptates sequi, officiis consectetur, soluta praesentium, dolorum sint.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-dv">
+                <h2>Services</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+
+                <div class="serv-dv">
+                    <div class="data">
+                        <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                        <h4>Lorem Ipsum</h4>
+                        <p>
+                            Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
+                        </p>
+                    </div>
+
+                    <div class="data">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <h4>Lorem Ipsum</h4>
+                        <p>
+                            Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
+                        </p>
+                    </div>
+
+                    <div class="data">
+                        <i class="fa fa-database" aria-hidden="true"></i>
+                        <h4>Lorem Ipsum</h4>
+                        <p>
+                            Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
+                        </p>
+                    </div>
+
+                    <div class="data">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        <h4>Lorem Ipsum</h4>
+                        <p>
+                            Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
+                        </p>
+                    </div>
+
+                    <div class="data">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <h4>Lorem Ipsum</h4>
+                        <p>
+                            Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
+                        </p>
+                    </div>
+
+                    <div class="data">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <h4>Lorem Ipsum</h4>
+                        <p>
+                            Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-dv">
+                <h2>Contact Us</h2>
+                <h4>Send us a message</h4>
+                <form>
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="text" name="name" placeholder="Your Email">
+                    <input type="text" name="name" placeholder="Subject">
+                    <textarea name="name" rows="10" placeholder="Message"></textarea>
+                </form>
+
+                <div class="map-sec">
+                    <img src="images/map.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- main section -->
+
+    <footer>
+        All rights are reserved @2020
+    </footer>
+
+
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+
+        $(".mobi-menu").click(function(){
+            $(".menu").slideToggle();
+        });
+
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
+            document.getElementById("header").style.background = "#00b0c9";
+          } else {
+            document.getElementById("header").style.background = "transparent";
+          }
+        }
+    </script>
+
+    
+</body>
+</html>
